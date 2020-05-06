@@ -34,6 +34,14 @@
     justify-content: space-between;
     align-items: baseline;
   }
+
+  .dropdown:focus {
+    outline:  none !important;
+}
+  .dropdown .select:focus {
+      outline:  none !important;
+  }
+
   .dropdown .select > i {
       font-size: 13px;
       color: #888;
