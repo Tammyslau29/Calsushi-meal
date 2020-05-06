@@ -211,7 +211,7 @@ textarea.form-control {
 }
 
 .site-header .heading {
-  color: #d92830;
+  color: #ffffff;
 }
 
 .site-header.scrolled {
@@ -675,10 +675,14 @@ textarea.form-control {
   float: left;
   width: 100%;
   margin-bottom: 1rem !important;
+  display: flex !important;
+  align-items: baseline;
 }
 
 .menu-food-item .text {
-  width: calc(100%);
+  font-size:14px;
+  width: 92%;
+  padding:0 10px;
 }
 
 .menu-food-item .text img {
@@ -693,13 +697,12 @@ textarea.form-control {
 
 @media (min-width: 768px) {
   .menu-food-item .text {
-    width: calc(100% - 70px);
+    width: 88%;
   }
 }
 
 .menu-food-item .price {
   text-align: left;
-  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -711,7 +714,7 @@ textarea.form-control {
 
 .menu-food-item .price strong {
   color: #ff7a5c;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .menu-food-item h3 {
@@ -868,6 +871,13 @@ textarea.form-control {
 
 }
 
+.lightbox-container{
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 10px;
+  padding: 0 10px;
+
+}
 @media (min-width: 576px) {
   .iframe-container {
     position: relative;
@@ -875,13 +885,19 @@ textarea.form-control {
     width: 55%;
     padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
-  .carousel-inner{
-    width:500px; height: 600px !important;
+
+  .lightbox-container{
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 300px);
+    row-gap: 10px;
   }
-  .carousel-control-prev-icon , .carousel-control-next-icon {
-    display:inline;
-    height:128px; 
-    width:128px !important ;
+  
+  .menu-food-item .text {
+    width:88%;
+    font-size:16px;
+  }
+  .menu-food-item .price strong {
+    font-size:20px;
   }
 }
 
@@ -1304,7 +1320,7 @@ textarea.form-control {
 }
 
 .section {
-  padding: 7em 0;
+  padding: 6em 0;
   z-index: 2;
   position: relative;
 }
@@ -1440,7 +1456,7 @@ textarea.form-control {
 }
 
 .cover_1 .heading {
-  color: #d92830;
+  color: #ffffff;
   font-weight: 300;
   font-size: 30px;
   line-height: 1.5;
@@ -1964,3 +1980,6 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+
+
