@@ -633,7 +633,7 @@ textarea.form-control {
 }
 
 .site-tab-nav {
-  display: none;
+  display: inline-block;
   text-align: center;
   margin-bottom: 80px !important;
 }
@@ -641,8 +641,23 @@ textarea.form-control {
 .site-tab-nav li {
   float: none;
   display: inline-block;
-  *display: inline;
   zoom: 1;
+}
+
+
+@media(max-width: 500px){
+  .site-tab-nav {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 40px !important;
+    padding: 0 10px;
+  }
+  
+  .site-tab-nav li {
+    float: none;
+    display: block;
+    zoom: 1;
+  }
 }
 
 .site-tab-nav li a {
@@ -713,8 +728,8 @@ textarea.form-control {
 }
 
 .menu-food-item .price strong {
-  color: #ff7a5c;
-  font-size: 12px;
+  color: red;
+  font-size: 14px;
 }
 
 .menu-food-item h3 {
@@ -1333,7 +1348,7 @@ textarea.form-control {
 }
 
 .section {
-  padding: 5em 0;
+  padding: 3em 0;
   z-index: 2;
   position: relative;
 }
@@ -1993,6 +2008,5 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
-
 
 
