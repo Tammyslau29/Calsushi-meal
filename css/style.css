@@ -160,7 +160,7 @@ textarea.form-control {
 
 .bg-slant-white:after {
   z-index: 1;
-  background: #fff;
+  background: #f5ecd2;
   content: "";
   -webkit-transform: rotate(-5deg) translateX(-50%);
   -ms-transform: rotate(-5deg) translateX(-50%);
@@ -173,7 +173,7 @@ textarea.form-control {
 }
 
 .bg-slant-white.bg-light:after {
-  background: #f8f9fa;
+  background: #f5ecd2 !important;
 }
 
 .site-logo-wrap {
