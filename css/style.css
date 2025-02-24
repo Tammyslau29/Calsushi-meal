@@ -8,7 +8,7 @@ body {
   font-size: 20px;
   line-height: 1.8;
   font-weight: 300;
-  color: gray;
+  color: black;
   overflow: hidden;
 }
 
@@ -214,6 +214,7 @@ textarea.form-control {
 
 .site-header .heading {
   color: #ffffff;
+  font-weight: 600 !important;
 }
 
 .site-header.scrolled {
@@ -314,16 +315,14 @@ textarea.form-control {
 }
 
 .btn.btn-outline-white {
-  border: 2px solid #d92830;
-  background: none;
+  background: #d92830;
   color: #fff;
   text-decoration: none;
 }
 
 .btn.btn-outline-white:hover {
-  background: #cf826b;
+  background: #c64248;
   color: #fff;
-  border: 2px solid transparent;
 }
 
 .bg-image,
@@ -662,7 +661,7 @@ textarea.form-control {
 
 .site-tab-nav li a {
   background: none;
-  color: gray;
+  color: black;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -672,12 +671,15 @@ textarea.form-control {
   margin: 0 10px;
   font-weight: 600;
 }
+.site-tab-nav li a:hover {
+  border-bottom: 2px solid black;
+}
 
 .site-tab-nav li a.active {
   color: black;
-  color: #ff7a5c;
+  color: #d92830;
   background: none;
-  border-bottom: 2px solid #ff7a5c;
+  border-bottom: 2px solid #d92830;
 }
 
 .site-tab-nav,
@@ -695,7 +697,7 @@ textarea.form-control {
 }
 
 .menu-food-item .text {
-  font-size:14px;
+  font-size:18px;
   width: 92%;
   padding:0 10px;
 }
@@ -729,7 +731,8 @@ textarea.form-control {
 
 .menu-food-item .price strong {
   color: #464545;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .menu-food-item h3 {
@@ -915,10 +918,10 @@ textarea.form-control {
   
   .menu-food-item .text {
     width:88%;
-    font-size:16px;
+    font-size:18px;
   }
   .menu-food-item .price strong {
-    font-size:20px;
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) {
@@ -1486,28 +1489,31 @@ textarea.form-control {
 
 .cover_1 .heading {
   color: #ffffff;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 30px;
   line-height: 1.5;
   text-transform: uppercase;
-  margin-bottom: 30px !important;
+  margin-bottom: 16px !important;
 }
 
 .heading-sub-header {
   color: white;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
   .cover_1 .heading {
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.2;
     text-transform: uppercase;
+    margin-bottom: 20px
   }
   .heading-sub-header {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
   }
 }
 
@@ -1878,8 +1884,8 @@ textarea.form-control {
 }
 
 .ftco-footer {
-  background: #efc78b;
-  padding: 7em 0;
+  background: #d92830;
+  padding: 4em 0;
   font-size: 15px;
   font-weight: 400;
 }
